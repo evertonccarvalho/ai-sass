@@ -65,12 +65,13 @@ const ConversationPage = () => {
 	return (
 		<div>
 			<Heading
-				title="Conversation"
-				description="Our most advanced conversation model."
+				title="Conversação"
+				description="Nosso modelo de conversação mais avançado."
 				icon={MessageSquare}
 				iconColor="text-violet-500"
 				bgColor="bg-violet-500/10"
 			/>
+
 			<div className="px-4 lg:px-8">
 				<div>
 					<Form {...form}>
@@ -97,7 +98,7 @@ const ConversationPage = () => {
 											<Input
 												className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
 												disabled={isLoading}
-												placeholder="How do I calculate the radius of a circle?"
+												placeholder="Digite sua mensagem aqui..."
 												{...field}
 											/>
 										</FormControl>
@@ -110,7 +111,7 @@ const ConversationPage = () => {
 								disabled={isLoading}
 								size="icon"
 							>
-								Generate
+								Enviar Mensagem
 							</Button>
 						</form>
 					</Form>
@@ -122,7 +123,7 @@ const ConversationPage = () => {
 						</div>
 					)}
 					{messages.length === 0 && !isLoading && (
-						<Empty label="No conversation started." />
+						<Empty label="Nenhuma conversa iniciada." />
 					)}
 					<div className="flex flex-col-reverse gap-y-4">
 						{messages.map((message) => (

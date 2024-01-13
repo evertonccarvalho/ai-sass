@@ -13,41 +13,42 @@ import { useRouter } from 'next/navigation';
 
 const tools = [
 	{
-		label: 'conversation',
+		label: 'Conversação',
 		icon: MessageSquare,
 		color: 'text-violet-500',
 		bgColor: 'bg-violet-500/10',
 		href: '/conversation',
 	},
 	{
-		label: 'Music Generation',
+		label: 'Geração de Música',
 		icon: Music,
 		color: 'text-emerald-500',
 		bgColor: 'bg-emerald-500/10',
 		href: '/music',
 	},
 	{
-		label: 'Image Generation',
+		label: 'Geração de Imagens',
 		icon: ImageIcon,
 		color: 'text-pink-500',
 		bgColor: 'bg-pink-500/10',
 		href: '/image',
 	},
 	{
-		label: 'Video Generation',
+		label: 'Geração de Vídeos',
 		icon: Video,
 		color: 'text-orange-500',
 		bgColor: 'bg-orange-500/10',
 		href: '/video',
 	},
 	{
-		label: 'Code Generation',
+		label: 'Geração de Código',
 		icon: Code,
 		color: 'text-green-500',
 		bgColor: 'bg-green-500/10',
 		href: '/code',
 	},
 ];
+
 const DashboardPage = () => {
 	const router = useRouter();
 	return (
@@ -55,10 +56,10 @@ const DashboardPage = () => {
 			<div className="mb-8 space-y-4">
 				<h2 className="text-2xl md:text-4xl font-bold text-center">
 					{' '}
-					Explore the power of AI
+					Explore o poder da IA
 				</h2>
 				<p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-					Chat with the smartest AI - Experience the power of AI
+					Converse com a IA mais inteligente - Experimente o poder da IA{' '}
 				</p>
 			</div>
 			<div className="px-4 md:px-20 lg:px-32 space-y-4">

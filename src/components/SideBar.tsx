@@ -19,43 +19,43 @@ const montserrat = Montserrat({ weight: '600', subsets: ['latin'] });
 
 const routes = [
 	{
-		label: 'Dashboard',
+		label: 'Painel',
 		icon: LayoutDashboard,
 		href: '/dashboard',
 		color: 'text-sky-500',
 	},
 	{
-		label: 'Conversation',
+		label: 'Conversação',
 		icon: MessageSquare,
 		href: '/conversation',
 		color: 'text-violet-500',
 	},
 	{
-		label: 'Image Gerneration',
+		label: 'Geração de Imagens',
 		icon: ImageIcon,
 		href: '/image',
 		color: 'text-pink-500',
 	},
 	{
-		label: 'Video Gerneration',
+		label: 'Geração de Vídeos',
 		icon: VideoIcon,
 		href: '/video',
 		color: 'text-orange-500',
 	},
 	{
-		label: 'Music Gerneration',
+		label: 'Geração de Música',
 		icon: MusicIcon,
 		href: '/music',
 		color: 'text-emerald-500',
 	},
 	{
-		label: 'Code Gerneration',
+		label: 'Geração de Código',
 		icon: Code,
 		href: '/code',
 		color: 'text-green-500',
 	},
 	{
-		label: 'Settings',
+		label: 'Configurações',
 		icon: Settings,
 		href: '/dashboard',
 	},
@@ -72,7 +72,7 @@ export const SideBar = () => {
 						<Image fill alt="logo" src="/logo.png" />
 					</div>
 					<h1 className={cn('text-2xl font-bold', montserrat.className)}>
-						Genius
+						Caibral
 					</h1>
 				</Link>
 				<div className="space-y-1">
