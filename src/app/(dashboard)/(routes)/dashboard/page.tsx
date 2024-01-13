@@ -45,7 +45,7 @@ const tools = [
 		icon: Code,
 		color: 'text-green-500',
 		bgColor: 'bg-green-500/10',
-		href: '/video',
+		href: '/code',
 	},
 ];
 const DashboardPage = () => {
