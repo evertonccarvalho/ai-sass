@@ -21,10 +21,10 @@ export async function POST(req: Request) {
 		}
 
 		const response = await replicate.run(
-			'riffusion/riffusion:8cf61ea6c56afd61d8f5b9ffd14d7c216c0a93844ce2d82ac1c9ecc9c7f24e05',
+			'meta/musicgen:b05b1dff1d8c6dc63d14b0cdb42135378dcb87f6373b0d3d341ede46e59e2b38',
 			{
 				input: {
-					prompt_a: prompt,
+					model_version: prompt,
 				},
 			}
 		);
