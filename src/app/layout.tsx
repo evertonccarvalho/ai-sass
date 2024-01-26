@@ -4,6 +4,8 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 import { ClerkProvider } from '@clerk/nextjs';
+import { ModalProvider } from '@/components/modal-provider';
+import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
 	title: 'Caibral',
 	description: 'Plataforma de IA',
@@ -16,8 +18,18 @@ export default function RootLayout({
 }) {
 	return (
 		<ClerkProvider>
-			<html lang="pt-br">
-				<body className={inter.className}>{children}</body>
+			<html lang="pt-br" suppressHydrationWarning>
+				<body className={inter.className}>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						<ModalProvider />
+						{children}
+					</ThemeProvider>
+				</body>
 			</html>
 		</ClerkProvider>
 	);
