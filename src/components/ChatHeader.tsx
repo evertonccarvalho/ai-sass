@@ -1,6 +1,6 @@
 const ChatHeader = () => {
 	return (
-		<div className="w-full flex gap-3 justify-start items-center text-zinc-800">
+		<div className="w-full flex gap-3 justify-start items-center text-foreground">
 			<div className="flex flex-col items-start text-sm">
 				<p className="text-xs">Conversa com</p>
 				<div className="flex gap-1.5 items-center">

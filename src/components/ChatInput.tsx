@@ -63,7 +63,7 @@ const ChatInput = ({ className, ...props }: ChatInputProps) => {
 	};
 
 	return (
-		<div className={cn('border-t py-2 border-zinc-300', className)}>
+		<div className={cn('border-t py-2 border-secondary', className)}>
 			<div className="h-64 overflow-y-scroll  overflow-x-hidden mx-2">
 				{isLoading && (
 					<div className="p-2 rounded-lg w-full flex items-center justify-center bg-muted">
@@ -89,7 +89,7 @@ const ChatInput = ({ className, ...props }: ChatInputProps) => {
 							<ReackMarkdown
 								components={{
 									pre: ({ node, ...props }) => (
-										<div className="overflow-auto w-full my-2  bg-black/10 p-2 rounded-lg">
+										<div className="overflow-auto w-full my-2  bg-background p-2 rounded-lg">
 											<pre {...props} />
 										</div>
 									),
