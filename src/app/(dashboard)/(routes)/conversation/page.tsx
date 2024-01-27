@@ -132,7 +132,7 @@ const ConversationPage = () => {
 								className={cn(
 									'p-8 w-full flex items-start gap-x-8 rounded-lg',
 									message.role !== 'assistant'
-										? 'bg-white border border-black/10'
+										? 'bg-foreground text-background border border-black/10'
 										: 'bg-muted'
 								)}
 							>

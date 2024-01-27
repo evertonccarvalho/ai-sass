@@ -80,7 +80,7 @@ const ChatInput = ({ className, ...props }: ChatInputProps) => {
 							className={cn(
 								'p-2 w-full flex items-start gap-x-2  rounded-lg',
 								message.role !== 'assistant'
-									? 'bg-white border border-black/10'
+									? 'bg-foreground text-background border border-black/10'
 									: 'bg-muted'
 							)}
 						>
