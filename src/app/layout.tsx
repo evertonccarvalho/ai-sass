@@ -7,8 +7,8 @@ import { ClerkProvider } from '@clerk/nextjs';
 import { ModalProvider } from '@/components/modal-provider';
 import { ThemeProvider } from '@/components/theme-provider';
 export const metadata: Metadata = {
-	title: 'Caibral',
-	description: 'Plataforma de IA',
+	title: 'Caibral ',
+	description: 'Potencializando Inteligência Artificial',
 };
 
 export default function RootLayout({
