@@ -30,6 +30,7 @@ import {
 } from '@/components/ui/select';
 import { Card, CardFooter } from '@/components/ui/card';
 import Image from 'next/image';
+import toast from 'react-hot-toast';
 
 const ImagePage = () => {
 	const router = useRouter();
@@ -61,7 +62,7 @@ const ImagePage = () => {
 			if (error?.response?.status === 403) {
 				proModal.onOpen();
 			} else {
-				console.log('Something went wrong.');
+				toast.error('Something went wrong.');
 			}
 		} finally {
 			router.refresh();

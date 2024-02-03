@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 import { ClerkProvider } from '@clerk/nextjs';
 import { ModalProvider } from '@/components/modal-provider';
 import { ThemeProvider } from '@/components/theme-provider';
+import ToasterProvider from '@/components/toaster-provider';
 export const metadata: Metadata = {
 	title: 'Caibral ',
 	description: 'Potencializando Inteligência Artificial',
@@ -27,6 +28,7 @@ export default function RootLayout({
 						disableTransitionOnChange
 					>
 						<ModalProvider />
+						<ToasterProvider />
 						{children}
 					</ThemeProvider>
 				</body>
