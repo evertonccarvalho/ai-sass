@@ -12,7 +12,6 @@ const NavBar = async () => {
 			<MobileSidebar apiLimitCount={apiLimitCount} isPro={isPro} />
 			<div className="flex w-full justify-end">
 				<UserButton afterSignOutUrl="/" />
-				<ModeToggle />
 			</div>
 		</div>
 	);
