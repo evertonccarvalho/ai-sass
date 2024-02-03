@@ -16,7 +16,6 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
 				</div>
 				<main className="md:pl-72 pb-10">
 					<NavBar />
-					<Chat />
 
 					{children}
 				</main>
